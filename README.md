@@ -70,40 +70,6 @@ Review the scripts before running them and install any system packages required 
 
 Pi Agent may use credentials for services such as Telegram.
 
-**Do not place real API keys, bot tokens, passwords, or other credentials directly in files committed to Git.**
-
-Sensitive values should instead be stored in:
-
-- environment variables
-- an ignored `.env` file
-- another local configuration file excluded through `.gitignore`
-
-For example:
-
-```bash
-export TELEGRAM_BOT_TOKEN="your-token-here"
-```
-
-Applications can then read the value from the environment rather than storing it in source code.
-
-## Sensitive Local Data
-
-Some Pi Agent components generate information that should normally remain local to the Raspberry Pi, including:
-
-- discovered IP addresses
-- MAC addresses
-- trusted-device lists
-- device labels
-- investigation results
-- Telegram state/offset information
-- Suricata/runtime data
-- local databases
-- logs and backup files
-
-These files should not normally be committed to a public GitHub repository.
-
-The project's `.gitignore` is used to prevent local runtime data, secrets, databases, temporary files, virtual environments, and backups from being accidentally uploaded.
-
 ## Usage
 
 Run the main Python agent with:
@@ -121,31 +87,6 @@ Individual helper scripts can also be executed separately, for example:
 ```
 
 Some scripts may require elevated privileges depending on the network tools or system resources they access.
-
-## Security
-
-Before committing or publishing changes, check that no credentials or sensitive local information are being tracked.
-
-Useful checks include:
-
-```bash
-git status
-git diff --cached
-```
-
-The repository can also be scanned with tools such as Gitleaks before pushing changes to GitHub.
-
-Never publish:
-
-- Telegram bot tokens
-- API keys
-- passwords
-- private keys
-- authentication credentials
-- `.env` files containing secrets
-- sensitive local network inventories
-
-If a credential is accidentally exposed, revoke or rotate it rather than simply deleting it from the source code.
 
 ## Purpose
 
