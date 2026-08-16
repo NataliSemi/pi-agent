@@ -1,0 +1,67 @@
+{
+  "phishing": [
+    {
+      "question": "Which control best reduces the risk of successful phishing attacks?",
+      "choices": {
+        "A": "Disabling audit logs",
+        "B": "Security awareness training and MFA",
+        "C": "Using shared administrator accounts",
+        "D": "Removing endpoint protection"
+      },
+      "answer": "B",
+      "explanation": "Security awareness training helps users identify phishing, while MFA reduces the impact of stolen credentials."
+    }
+  ],
+  "ransomware": [
+    {
+      "question": "Which action best helps an organization recover from ransomware?",
+      "choices": {
+        "A": "Paying the ransom immediately",
+        "B": "Maintaining tested offline backups",
+        "C": "Disabling all monitoring tools",
+        "D": "Sharing privileged credentials"
+      },
+      "answer": "B",
+      "explanation": "Tested offline backups allow recovery without relying on the attacker."
+    }
+  ],
+  "vulnerability": [
+    {
+      "question": "After a critical vulnerability is announced, what should defenders do first?",
+      "choices": {
+        "A": "Ignore it until exploitation is confirmed",
+        "B": "Assess exposure and prioritize remediation based on risk",
+        "C": "Disable all network access permanently",
+        "D": "Delete all logs"
+      },
+      "answer": "B",
+      "explanation": "Security+ emphasizes risk-based vulnerability management."
+    }
+  ],
+  "critical infrastructure": [
+    {
+      "question": "Which activity best supports protection of critical infrastructure?",
+      "choices": {
+        "A": "Continuous monitoring and incident response planning",
+        "B": "Using one shared administrator password",
+        "C": "Avoiding backups",
+        "D": "Disabling vulnerability scans"
+      },
+      "answer": "A",
+      "explanation": "Critical systems require monitoring, response planning, access control, and resilience."
+    }
+  ],
+  "default": [
+    {
+      "question": "Which Security+ concept helps organizations choose controls based on likelihood and impact?",
+      "choices": {
+        "A": "Risk management",
+        "B": "Password sharing",
+        "C": "Disabling logs",
+        "D": "Ignoring vulnerabilities"
+      },
+      "answer": "A",
+      "explanation": "Risk management helps prioritize controls based on business impact and threat likelihood."
+    }
+  ]
+}

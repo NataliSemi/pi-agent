@@ -1,0 +1,4 @@
+https://www.cisa.gov/news-events/cybersecurity-advisories.xml
+https://www.bleepingcomputer.com/feed/
+https://krebsonsecurity.com/feed/
+https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml

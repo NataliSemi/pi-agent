@@ -1,0 +1,38 @@
+# Secrets
+bot
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# Vim temporary files
+*.swp
+*.swo
+*~
+
+# Runtime/generated data
+data/
+
+# Databases
+*.db
+*.db.*
+*.sqlite
+*.sqlite3
+
+# Backups
+*.bak
+*.bak.*
+*.old
+*.old.*
+*.backup
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs
+*.log
